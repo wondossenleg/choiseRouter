@@ -17,6 +17,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 			<when expression='#[vars.Countryname=="India"]'>
 				<logger level="INFO" doc:name="Logger" doc:id="9802b5bd-c7a2-4f4d-94ee-d944f4565101" message='"This is India"'/>
 			</when>
+			<when expression='#[vars.Countryname=="Ethio"]'>
+				<logger level="INFO" doc:name="Logger" doc:id="4946d894-2a24-4099-9d78-79ee882f7294" />
+			</when>
 			<otherwise >
 				<logger level="INFO" doc:name="Logger" doc:id="dd8814af-90af-4520-9a94-8c40b1a4718d" message='"This is Defualt"'/>
 			</otherwise>
